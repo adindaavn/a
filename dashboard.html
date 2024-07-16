@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Gallery - Mars Admin Template</title>
+
+    <!-- Meta -->
+    <meta property="og:type" content="Website" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <link rel="stylesheet" href="assets/fonts/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+
+    <!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
+    
+		<!-- Date Range CSS -->
+		<link rel="stylesheet" href="assets/vendor/daterange/daterange.css" />
+	</head>
+  </head>
+
+  <body>
+    <!-- Page wrapper start -->
+    <div class="page-wrapper">
+      <!-- Main container start -->
+      <div class="main-container">
+        <!-- Sidebar wrapper start -->
+        <nav id="sidebar" class="sidebar-wrapper">
+          <!-- App brand starts -->
+          <div class="app-brand px-3 py-2 d-flex align-items-center">
+            <a href="index.html">
+                <h2 class="fw-bold m-0">Peduli Diri</h2>
+              <!-- <img src="assets/images/star.svg" class="logo" alt="Bootstrap Gallery" /> -->
+            </a>
+          </div>
+          <!-- App brand ends -->
+
+          <!-- Sidebar menu starts -->
+          <div class="sidebarMenuScroll">
+            <ul class="sidebar-menu">
+              <li class="active current-page">
+                <a href="index.html">
+                  <i class="bi bi-house"></i>
+                  <span class="menu-text">Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="calendar.html">
+                  <i class="bi bi-calendar2"></i>
+                  <span class="menu-text">Catatan Perjalanan</span>
+                </a>
+              </li>
+
+              <!-- <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-stickies"></i>
+                  <span class="menu-text">Isi Data</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="accordions.html">Accordions</a>
+                  </li>
+                  <li>
+                    <a href="alerts.html">Alerts</a>
+                  </li>
+                </ul>
+              </li> -->
+
+              <li>
+                <a href="profile.html">
+                  <i class="bi bi-stickies"></i>
+                  <span class="menu-text">Isi Data</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Sidebar menu ends -->
+        </nav>
+        <!-- Sidebar wrapper end -->
+
+        <!-- App container starts -->
+        <div class="app-container">
+          <!-- App header starts -->
+          <div class="app-header d-flex align-items-center">
+            <!-- Toggle buttons start -->
+            <div class="d-flex">
+              <button class="btn btn-outline-primary me-2 toggle-sidebar" id="toggle-sidebar">
+                <i class="bi bi-text-indent-left fs-5"></i>
+              </button>
+              <button class="btn btn-outline-primary me-2 pin-sidebar" id="pin-sidebar">
+                <i class="bi bi-text-indent-left fs-5"></i>
+              </button>
+            </div>
+            <!-- Toggle buttons end -->
+
+            <!-- App brand sm start -->
+            <div class="app-brand-sm d-md-none d-sm-block">
+              <a href="index.html">
+                <h4 class="fw-bold m-0">Peduli Diri</h4>
+                <!-- <img src="assets/images/star.svg" class="logo" alt="Bootstrap Gallery" /> -->
+              </a>
+            </div>
+            <!-- App brand sm end -->
+
+            <!-- Breadcrumb start -->
+            <ol class="breadcrumb d-none d-lg-flex ms-3">
+              <li class="breadcrumb-item">
+                <i class="bi bi-house lh-1"></i>
+                <a href="index.html" class="text-decoration-none">Home</a>
+              </li>
+              <li class="breadcrumb-item text-secondary">Dashboard</li>
+            </ol>
+            <!-- Breadcrumb end -->
+
+            <!-- App header actions start -->
+            <div class="header-actions">
+              <div class="dropdown ms-2">
+                <a
+                  id="userSettings"
+                  class="dropdown-toggle d-flex py-2 align-items-center text-decoration-none"
+                  href="#!"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <div class="rounded-2">
+						<img src="assets/images/user.png" class="rounded-2 img-3x" alt="Bootstrap Gallery" />
+                      <!-- <i class="bi bi-person h2"></i> -->
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                  <div class="p-3 border-bottom mb-2">
+                    <h6 class="mb-1">Windah Basudara</h6>
+                    <p class="m-0 small opacity-50">541551548184</p>
+                  </div>
+                  <div class="d-grid p-3 py-2">
+                    <a class="btn btn-danger" href="login.html">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- App header actions end -->
+          </div>
+          <!-- App header ends -->
+
+          <!-- App body starts -->
+          <div class="app-body">
+            <!-- Container starts -->
+            <div class="container-fluid">
+              <!-- Row start -->
+              <div class="row">
+                <div class="col-12">
+					<div class="card mb-4">
+						<div class="card-body">
+                            <h3 class="card-title text-primary fw-bold mb-3">Halo, Windah!</h3>
+							<p class="m-0">Selamat datang di Peduli Diri. Yuk, mulai catat perjalananmu</p>
+						</div>
+					</div>
+				</div>
+                <div class="col-sm-6 col-12">
+					<div class="card mb-4">
+						<div class="card-body">
+							<div class="d-flex flex-row">
+								<div class="icon-box lg col-3 rounded-3 bg-light">
+									<i class="bi bi-calendar2 text-primary fs-2"></i>
+								</div>
+								<div class="mx-4 col-9">
+									<p class="mb-2 lh-1 d-flex align-items-center">
+									</p>
+									<h2 class="fw-bold mb-2">Catatan Perjalanan</h2>
+									<h6 class="m-0 fw-normal opacity-50 mb-2">Liat catatan perjalananmu</h6>
+                                    <button type="button" class="btn btn-outline-primary m-3 float-md-end">
+										<i class="bi bi-arrow-up-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-sm-6 col-12">
+					<div class="card mb-4">
+						<div class="card-body">
+							<div class="d-flex flex-row">
+								<div class="icon-box lg col-3 rounded-3 bg-light">
+									<i class="bi bi-stickies text-primary fs-2"></i>
+								</div>
+								<div class="mx-4 col-9">
+									<p class="mb-2 lh-1 d-flex align-items-center">
+									</p>
+									<h2 class="fw-bold mb-2">Buat Catatan</h2>
+									<h6 class="m-0 fw-normal opacity-50 mb-2">Tambah catatan perjalananmu</h6>
+                                    <button type="button" class="btn btn-outline-primary m-3 float-md-end">
+										<i class="bi bi-arrow-up-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+              </div>
+              <!-- Row end -->
+
+              <!-- Row start -->
+              <div class="row">
+                <div class="col-xl-4 col-sm-12 col-12">
+                  <div class="card mb-3">
+                    <div class="card-header">
+                      <h5 class="card-title">Catatan Perjalanan</h5>
+                    </div>
+                    <div class="card-body">
+                      <form action="" method="get">
+                        <div class="m-2">
+                          <label class="form-label" for="tanggal_jam">Tanggal dan Jam</label>
+                          <div class="input-group">
+                            <input type="text" id="tanggal_jam" class="form-control datepicker-time-24" />
+                            <span class="input-group-text">
+                              <i class="bi bi-calendar4"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="m-2">
+                          <label class="form-label" for="lokasi">Lokasi</label>
+                          <input type="text" id="lokasi" class="form-control" placeholder="Toko Bunga" />
+                        </div>
+                        <div class="m-2">
+                          <label class="form-label" for="suhu">Suhu Tubuh</label>
+                          <div class="input-group">
+                            <input type="number" id="suhu" class="form-control" placeholder="34.5" step="0.1"/>
+                            <span class="input-group-text">°C</span>
+                          </div>
+                        </div>
+                        <button type="submit" href="#" class="btn btn-outline-primary m-2 float-end">Update</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Row end -->
+
+              <!-- Row start -->
+              <div class="row">
+                <div class="col-12">
+					<div class="card mb-4">
+						<div class="card-header">
+							<h4 class="card-title">Catatan Perjalanan</h4>
+						</div>
+						<div class="card-body">
+							<div class="border border-dark rounded-3">
+								<div class="table-responsive">
+									<table class="table align-middle table-hover m-0">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Tanggal</th>
+												<th>Waktu</th>
+												<th>Lokasi</th>
+												<th>Suhu Tubuh</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>App crashes</td>
+												<td>Main App</td>
+												<td>Lewis</td>
+												<td>
+													<span class="badge border border-danger text-danger">Open</span>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Saving file</td>
+												<td>Form Screen</td>
+												<td>James</td>
+												<td>
+													<span class="badge border border-success text-success">In Progress</span>
+												</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Login fail</td>
+												<td>Main App</td>
+												<td>Powell</td>
+												<td>
+													<span class="badge border border-danger text-danger">Open</span>
+												</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Saving file</td>
+												<td>Form Screen</td>
+												<td>James</td>
+												<td>
+													<span class="badge border border-success text-success">In Progress</span>
+												</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Login fail</td>
+												<td>Main App</td>
+												<td>Powell</td>
+												<td>
+													<span class="badge border border-success text-success">In Progress</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+              </div>
+              <!-- Row end -->
+            </div>
+            <!-- Container ends -->
+          </div>
+          <!-- App body ends -->
+
+          <!-- App footer start -->
+          <div class="app-footer">
+            <span>© Bootstrap Gallery 2023</span>
+          </div>
+          <!-- App footer end -->
+        </div>
+        <!-- App container ends -->
+      </div>
+      <!-- Main container end -->
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- *************
+			************ JavaScript Files *************
+		************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+    <!-- Overlay Scroll JS -->
+    <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+    <!-- Moment JS -->
+    <script src="assets/js/moment.min.js"></script>
+
+    <!-- Date Range JS -->
+    <script src="assets/vendor/daterange/daterange.js"></script>
+    <script src="assets/vendor/daterange/custom-daterange.js"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
